@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Решение алгоритмической задачи</title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="../styles/main.css"/>
+  </head>
+  <body>
+    <table class="navigation">
+        <thead>
+            <tr>
+                <th>Навигация сайта</th>
+            </tr>
+        </thead>
+        <tbody> 
+            <tr>
+                <td>
+                    <ul>
+                        <li><a href="../index.html">На главную</a></li>
+                        <li><a href="./static_passport.html">На страницу с паспортом</a></li>
+                        <li><a class="current_nav" href="./algorithm.html">Алгоритмическая задача</a></li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="form">
+        <h3>Узнай свое место в вагоне</h3>
+        <form target="_blank" action="algorithm.html" method="get" id="sol" name="sol">
+            <p>Введите номер места: <input id="place" name="Номер места в вагоне" type="number"> </p>
+            <br>
+            <p>Результат: <span id="result"></span></p>
+            <input type="hidden" name="Решение задачи" id="hidden_result" value="">
+            <input type="submit" name="submit" value="Отправить на сервер">
+        </form>
+        <button id="calc">Посчитать результат</button>
+    </div>
+</body>
+<script src="../js/algo.js"></script>
+</html>
